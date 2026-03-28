@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenGrid Energy</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- external stylesheets -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- external scripts -->
+  <script defer src="assets/js/script.js"></script>
+
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#home" class="logo" onclick="smoothScroll(event,'home')">
+      <div class="logo-icon"><img src="assets/images/gge.png" width="100" height="100" alt="GreengridEnergy logo"></div>
+    </a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#home"     class="nav-link" onclick="smoothScroll(event,'home')">Home</a>
+        <a href="#about"    class="nav-link" onclick="smoothScroll(event,'about')">About</a>
+        <a href="#services" class="nav-link" onclick="smoothScroll(event,'services')">Services</a>
+        <!-- <a href="#impact"   class="nav-link" onclick="smoothScroll(event,'impact')">Impact</a> -->
+        <a href="#contact"  class="nav-link" onclick="smoothScroll(event,'contact')">Contact</a>
+        <a href="#contact"  class="btn-primary btn-nav" onclick="smoothScroll(event,'contact')">Get a Quote →</a>
+      </div>
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode">
+        <span class="theme-icon">☀️</span>
+      </button>
+      <!-- Hamburger (mobile only) -->
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU DRAWER -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <a href="#home"     class="mobile-link" onclick="closeMobileMenu();smoothScroll(event,'home')">Home</a>
+    <a href="#about"    class="mobile-link" onclick="closeMobileMenu();smoothScroll(event,'about')">About</a>
+    <a href="#services" class="mobile-link" onclick="closeMobileMenu();smoothScroll(event,'services')">Services</a>
+    <!-- <a href="#impact"   class="mobile-link" onclick="closeMobileMenu();smoothScroll(event,'impact')">Impact</a> -->
+    <a href="#contact"  class="mobile-link" onclick="closeMobileMenu();smoothScroll(event,'contact')">Contact</a>
+    <a href="#contact"  class="btn-primary mobile-cta" onclick="closeMobileMenu();smoothScroll(event,'contact')">Get a Quote →</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-bg-img" style="background-image:url('assets/images/frame-3.png')"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <span class="hero-badge fade-up" style="animation-delay:0s">⚡ Solar Energy India</span>
+      <h1 class="hero-title fade-up" style="animation-delay:0.15s">
+        Power your world<br>with <em>smarter</em><br>green energy.
+      </h1>
+      <p class="hero-sub fade-up" style="animation-delay:0.3s">
+        GreenGrid Energy designs, installs, and optimises renewable energy systems for homes and businesses — built around what you actually need, not a one-size-fits-all package.
+      </p>
+      <div class="hero-ctas fade-up" style="animation-delay:0.45s">
+        <a href="#services" class="btn-primary" onclick="smoothScroll(event,'services')">Explore Services →</a>
+        <a href="#contact"  class="btn-ghost"   onclick="smoothScroll(event,'contact')">Talk to us</a>
+      </div>
+
+    </div><!-- /.hero-content -->
+
+    <!-- Scroll Down Cue -->
+    <div class="scroll-cue">
+      <span class="scroll-cue-text">Scroll</span>
+      <div class="scroll-cue-line"></div>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-inner">
+
+      <!-- Header -->
+      <div class="about-header fade-up">
+        <span class="section-label">Who we are</span>
+        <h2 class="section-title">About <em>GreenGrid Energy</em></h2>
+        <p class="about-lead">Leading the Clean Energy Revolution</p>
+      </div>
+
+      <!-- Story + Trust pillars -->
+      <div class="about-grid fade-up" style="animation-delay:0.1s">
+        <div class="about-story">
+          <h3 class="about-story-title">Our Story</h3>
+          <p>The growing gap in meeting energy needs is a serious issue today. Finite energy resources such as fossil fuels and environmental concerns related to conventional energy sources have made renewable energy sources an attractive and necessary option.</p>
+          <p>A group of motivated and enthusiastic professionals having decades of experience in industry and academics in the area of energy and environment laid the foundation of Green Grid Energy. We are pioneering the production of clean energy through the most affordable and renewable energy solutions, committed to making sustainable energy accessible to all.</p>
+
+          <div class="about-mission-vision">
+            <div class="about-mv-card">
+              <div class="about-mv-icon">🎯</div>
+              <div>
+                <h4>Our Mission</h4>
+                <p>All our products and solutions serve the general public, corporate houses, government, municipal corporations, industries, government and non-government institutions. We deliver affordable solar technology that reduces environmental impact and drives energy independence.</p>
+              </div>
+            </div>
+            <div class="about-mv-card">
+              <div class="about-mv-icon">🌍</div>
+              <div>
+                <h4>Our Vision</h4>
+                <p>To make clean energy accessible to every home and business across India and beyond.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust pillars -->
+        <div class="about-pillars">
+          <div class="about-pillar fade-up" style="animation-delay:0.15s">
+            <div class="about-pillar-icon">🏆</div>
+            <h4>Industry Leaders</h4>
+            <p>Recognised experts in solar technology and implementation.</p>
+          </div>
+          <div class="about-pillar fade-up" style="animation-delay:0.2s">
+            <div class="about-pillar-icon">🔧</div>
+            <h4>Expert Team</h4>
+            <p>15+ years combined experience in renewable energy.</p>
+          </div>
+          <div class="about-pillar fade-up" style="animation-delay:0.25s">
+            <div class="about-pillar-icon">✅</div>
+            <h4>Quality Assured</h4>
+            <p>Standardized processes and international standards.</p>
+          </div>
+          <div class="about-pillar fade-up" style="animation-delay:0.3s">
+            <div class="about-pillar-icon">🤝</div>
+            <h4>Customer Focused</h4>
+            <p>Dedicated support and operations and maintenance services.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Values -->
+      <div class="about-values-wrap fade-up" style="animation-delay:0.2s">
+        <div class="about-values-header">
+          <span class="section-label">What drives us</span>
+          <h3 class="about-values-title">Our Core <em>Values</em></h3>
+          <p>Principles that guide everything we do</p>
+        </div>
+        <div class="about-values-grid">
+          <div class="about-value-card fade-up" style="animation-delay:0.1s">
+            <div class="about-value-icon">♻️</div>
+            <h4>Sustainability</h4>
+            <p>Environmental responsibility in every project and decision we make.</p>
+          </div>
+          <div class="about-value-card fade-up" style="animation-delay:0.2s">
+            <div class="about-value-icon">💎</div>
+            <h4>Excellence</h4>
+            <p>Highest quality standards in design, installation, and service delivery.</p>
+          </div>
+          <div class="about-value-card fade-up" style="animation-delay:0.3s">
+            <div class="about-value-icon">🤲</div>
+            <h4>Integrity</h4>
+            <p>Transparent business practices and honest communication with clients.</p>
+          </div>
+          <div class="about-value-card fade-up" style="animation-delay:0.4s">
+            <div class="about-value-icon">💡</div>
+            <h4>Innovation</h4>
+            <p>Continuous improvement and adoption of the latest solar technologies.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="services-inner">
+      <div class="services-intro fade-up">
+        <span class="section-label">What we do</span>
+        <h2 class="section-title">End-to-end energy<br>solutions, <em>simplified.</em></h2>
+        <p>Every project is handled personally — from initial audit to final commissioning. No subcontractors, no confusion.</p>
+      </div>
+
+      <!-- CAROUSEL -->
+      <div class="services-carousel fade-up">
+        <div class="carousel-container">
+          <div class="carousel-slide active">
+            <img src="assets/images/OnGridSolar.png" alt="On-Grid Solar Installation">
+            <div class="carousel-overlay">
+              <h3 class="carousel-title">On-Grid Solar</h3>
+              <p class="carousel-desc">Connected to the main power grid for seamless energy management. Maximize savings with grid integration.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/images/FloatingSolar.png" alt="Floating Solar System">
+            <div class="carousel-overlay">
+              <h3 class="carousel-title">Floating Solar</h3>
+              <p class="carousel-desc">Advanced water-based solar systems for optimal efficiency. Perfect for reservoirs and large water bodies.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/images/SolarWaterPumping.png" alt="Solar Water Pumping">
+            <div class="carousel-overlay">
+              <h3 class="carousel-title">Solar Water Pumping</h3>
+              <p class="carousel-desc">Reliable off-grid water solutions powered by the sun. Ideal for agriculture and remote areas.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/images/SolarPVPower.png" alt="Solar PV Power System">
+            <div class="carousel-overlay">
+              <h3 class="carousel-title">Solar PV Power</h3>
+              <p class="carousel-desc">High-efficiency photovoltaic systems for residential and commercial use. Clean energy for every need.</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/images/Bess.png" alt="Battery Energy Storage System">
+            <div class="carousel-overlay">
+              <h3 class="carousel-title">BESS (Battery Storage)</h3>
+              <p class="carousel-desc">Advanced energy storage for uninterrupted power supply. Store excess energy for peak-hour usage.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Navigation -->
+        <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1)" aria-label="Previous slide">
+          &#10094;
+        </button>
+        <button class="carousel-btn carousel-next" onclick="moveCarousel(1)" aria-label="Next slide">
+          &#10095;
+        </button>
+
+        <!-- Carousel Dots -->
+        <div class="carousel-dots">
+          <span class="carousel-dot active" onclick="currentCarousel(0)"></span>
+          <span class="carousel-dot" onclick="currentCarousel(1)"></span>
+          <span class="carousel-dot" onclick="currentCarousel(2)"></span>
+          <span class="carousel-dot" onclick="currentCarousel(3)"></span>
+          <span class="carousel-dot" onclick="currentCarousel(4)"></span>
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card fade-up" style="animation-delay:0.1s">
+          <div class="service-card-top"><span class="service-icon">☀️</span><span class="service-tag">Core Service</span></div>
+          <h3>Grid Interactive Solar</h3>
+          <p>Rooftop and ground-mounted solar systems tailored to your energy profile with complete EPC delivery — residential to industrial scale.</p>
+        </div>
+        <div class="service-card fade-up" style="animation-delay:0.4s">
+          <div class="service-card-top"><span class="service-icon">🌿</span><span class="service-tag">Compliance</span></div>
+          <h3>Solar PV Power Plants</h3>
+          <p>Large-scale utility-level solar power generation facilities. Comprehensive EPC (Engineering, Procurement, Construction) services for commercial and industrial solar farms</p>
+        </div>
+         <div class="service-card fade-up" style="animation-delay:0.2s">
+          <div class="service-card-top"><span class="service-icon">💧</span><span class="service-tag">Sustainable Systems</span></div>
+          <h3>Solar Water Pumping Systems</h3>
+          <p>Solar-powered water pumping solutions for agriculture and rural applications. Efficient irrigation systems that eliminate diesel costs and reduce operational expenses.</p>
+        </div>
+         <div class="service-card fade-up" style="animation-delay:0.2s">
+          <div class="service-card-top"><span class="service-icon">🏗️</span><span class="service-tag">Project Model</span></div>
+          <h3>BOOT Model Solar Power Plants</h3>
+          <p>Build, Own, Operate, Transfer model for large-scale solar installations. End-to-end project management with guaranteed performance and handover after operational period.</p>
+        </div>
+         <div class="service-card fade-up" style="animation-delay:0.2s">
+          <div class="service-card-top"><span class="service-icon">🔋</span><span class="service-tag">Storage Solutions</span></div>
+          <h3>Energy Storage [BESS]</h3>
+          <p>Battery Energy Storage System [BESS] is a Smart battery solution that store excess power and keep you running through outages and peak-demand hours.</p>
+        </div>
+      </div>
+
+   
+      <!-- Support Services -->
+      <div class="support-services-section fade-up" style="animation-delay:0.3s">
+   
+        <div class="support-header">
+          <span class="section-label">Our commitment</span>
+          <h2 class="section-title">Comprehensive<br>Support Services</h2>
+          <p>Complete lifecycle support from design to optimization. We're with you at every step.</p>
+        </div>
+
+        <div class="support-grid">
+          <div class="support-card fade-up" style="animation-delay:0.1s">
+            <div class="support-icon">🔧</div>
+            <h3>Engineering & Design</h3>
+            <p>Expert solar engineers provide comprehensive system design, energy audits, and feasibility studies tailored to your specific requirements and site conditions.</p>
+          </div>
+          <div class="support-card fade-up" style="animation-delay:0.2s">
+            <div class="support-icon">📋</div>
+            <h3>Project Management</h3>
+            <p>End-to-end project management including permits, approvals, subsidy processing, and regulatory compliance for all project types.</p>
+          </div>
+          <div class="support-card fade-up" style="animation-delay:0.3s">
+            <div class="support-icon">🛠️</div>
+            <h3>Installation & Commissioning</h3>
+            <p>Professional installation by certified technicians with complete quality testing, performance verification, and system optimization before handover.</p>
+          </div>
+          <div class="support-card fade-up" style="animation-delay:0.4s">
+            <div class="support-icon">📊</div>
+            <h3>Operating & Maintenance</h3>
+            <p>Real-time performance monitoring, preventive maintenance, rapid response support, and annual performance optimization services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-grid">
+
+        <!-- Left -->
+        <div class="contact-info">
+          <span class="section-label">Get in touch</span>
+          <h2 class="section-title">Let's build your<br>green future.</h2>
+          <p>Whether you're curious home going solar or ready to get started, drop a message. You'll hear back directly — no bots, no team.</p>
+          <div class="contact-details">
+            <div class="contact-detail"><span>☎️</span><span><a href="tel:8008400492" class="contact-phone-link">+91 8008400492</a></span></div>
+           <div class="contact-detail"><span>📧</span><span><a href="mailto:info@greengridenergy.in">info@greengridenergy.in</a></span></div>
+            <div class="contact-detail"><span>📍</span><span>Villa No: 168, LaPaloma Villas, Mokila, Shankarpalli Mandal, R.R.Dist, Telangana - 501203, India</span></div>
+            <div class="contact-detail"><span>🕐</span><span>Response within 24 hours</span></div>
+          </div>
+        </div>
+
+        <!-- Right — Form -->
+        <div>
+          <div class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="field">
+                <input class="contact-input" type="text" id="f-name" placeholder="Your name" autocomplete="name" required />
+                <span class="field-error" id="err-name"></span>
+              </div>
+              <div class="field">
+                <input class="contact-input" type="email" id="f-email" placeholder="Email address" autocomplete="email" required />
+                <span class="field-error" id="err-email"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <input class="contact-input" type="tel" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')" id="f-phone" placeholder="Phone number" autocomplete="tel" required />
+                <span class="field-error" id="err-phone"></span>
+              </div>
+              <div class="field">
+                <input class="contact-input" type="text" id="f-subject" placeholder="Subject — e.g. Solar quote for 2BHK" />
+              </div>
+            </div>
+            <div class="field">
+              <textarea class="contact-input" id="f-message" rows="5" placeholder="Tell me home your energy goals or questions..." required></textarea>
+              <span class="field-error" id="err-message"></span>
+            </div>
+            <div class="form-error-banner" id="form-error">⚠️ Something went wrong. Check your Formspree ID or try again.</div>
+            <button class="btn-primary" id="submit-btn" onclick="submitForm()" style="align-self:flex-start;margin-top:4px">
+              Send Message ✉️
+            </button>
+          </div>
+
+          <!-- Success state -->
+          <div class="success-card" id="success-card">
+            <div class="success-icon">🌱</div>
+            <h3>Message sent!</h3>
+            <p>Thanks for reaching out. You'll hear back within 24 hours — directly, no auto-replies.</p>
+            <button class="btn-ghost" onclick="resetForm()">Send another →</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <div class="logo-icon"><img src="assets/images/gge.png" width="80" height="80" alt="GreengridEnergy"></div>
+      </div>
+      <p class="footer-copy">© 2026 Green Grid Energy.</p>
+      <div class="footer-links">
+        <a href="#home"     class="footer-link" onclick="smoothScroll(event,'home')">Home</a>
+        <a href="#about"    class="footer-link" onclick="smoothScroll(event,'about')">About</a>
+        <a href="#services" class="footer-link" onclick="smoothScroll(event,'services')">Services</a>
+        <a href="#contact"  class="footer-link" onclick="smoothScroll(event,'contact')">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+  
